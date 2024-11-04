@@ -4,26 +4,25 @@
   --font1: "museo slab";
   --font2: "Anton", sans-serif;
 }
-h3{
+h3 {
   margin-top: 2rem;
   font-size: 2rem;
-  text-align: center;  
+  text-align: center;
   font-family: var(--font2);
   font-style: italic;
   margin-bottom: 2rem;
   color: var(--noir);
-  text-shadow: var(--noir) 0 0 20px;}
+  text-shadow: var(--noir) 0 0 20px;
+}
 
 .collection1 img:hover,
-.collection2 img:hover{
+.collection2 img:hover {
   box-shadow: var(--noir) 0 0 20px;
 }
-.collection{
+.collection {
   display: block;
   flex-wrap: nowrap;
-  }
-
-
+}
 
 .collection1 {
   flex-wrap: nowrap;
@@ -40,34 +39,31 @@ h3{
   transition: all 0.3s ease;
   box-shadow: var(--jaune) 0 0 100px;
   object-fit: cover;
-
 }
 
-.collection2{
+.collection2 {
   height: 300px;
   display: flex;
   animation: defilement 12s linear reverse infinite;
 }
 
 .collection2 img {
-  margin: 1rem; 
+  margin: 1rem;
   object-fit: cover;
   border-radius: 2rem;
   transition: all 0.3s ease;
   box-shadow: var(--jaune) 0 0 100px;
-
 }
 
-
 @keyframes defilement {
-    0% {
-      transform: translateX(0%);
-    }
-  
-    100% {
-      transform: translateX(-113vw);
-    }
+  0% {
+    transform: translateX(0%);
   }
+
+  100% {
+    transform: translateX(-113vw);
+  }
+}
 
 .flex {
   align-items: center;
@@ -75,7 +71,7 @@ h3{
   display: flex;
 }
 
-button{
+button {
   font-size: 1rem;
   padding: 10px;
   position: absolute;
@@ -88,56 +84,57 @@ button{
   background-color: var(--noir);
   color: var(--jaune);
   box-shadow: var(--noir) 0 0 30px;
-
 }
-button:hover{
+button:hover {
   background-color: var(--jaune);
   color: var(--noir);
   box-shadow: var(--jaune) 0 0 30px;
-
 }
-iframe{
-  height: 100%;
+iframe {
+  height: auto;
   border: none;
+  margin-left: 2%;
+  margin-right: 2%;
 }
-#reseaux{
+#reseaux {
   margin-top: 3rem;
-  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
   height: 500px;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
-#credit img{
+#credit img {
   width: 5%;
   margin-right: 5rem;
   margin-left: 5rem;
   border-radius: 50rem;
 }
-.credit1{
+.credit1 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-bottom: 2rem;
 }
-#credit p{
+#credit p {
   font-size: 15px;
   font-family: var(--font2);
   font-weight: 100;
 }
-strong{
+strong {
   font-size: 20px;
   font-family: var(--font2);
   font-weight: 100;
   font-style: italic;
 }
-#gardons{
-  border-radius: 0px!important;
+#gardons {
+  border-radius: 0px !important;
 }
-.insta{
+.insta {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.insta:hover{
-  width: 6%!important;
+.insta:hover {
+  width: 6% !important;
 }
